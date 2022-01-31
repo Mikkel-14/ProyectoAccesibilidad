@@ -1,13 +1,8 @@
 .contenedor{
     display: grid;
-    grid-template-rows: 75px auto;
+    grid-template-rows: 80px auto;
 }
 
-header{
-    display: grid;
-    grid-template-columns: 15% 85%;
-    border-bottom: 1px solid #dddddd;
-}
 
 #logo{
     height: 75px;
@@ -47,6 +42,3 @@ nav> div > div> a:hover {
     color: #FF6700;
 }
 
-/* form{
-    padding-left: 15%;
-} */
