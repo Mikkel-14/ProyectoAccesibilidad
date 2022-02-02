@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/basicStyles.css">
-    <link rel="stylesheet" href="./styles/estilosContacto.css">
-    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="./styles/estilosCarreras.css">
+    <title>Oferta académica IKIAM</title>
 </head>
 <body class="contenedor">
     <header>
         <img id="logo" src="https://www.ikiam.edu.ec/img/logo-ikiam-grey.png" 
         alt="Logotipo universidad IKIAM">
-        <nav tabindex="0">
+        <nav>
             <div class="desplegables">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
@@ -129,50 +129,40 @@
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="#">Inicio</a></li>
                   <li class="breadcrumb-item"><a href="#">Oferta académica</a></li>
-                  <li class="breadcrumb-item"><a href="#">Pregrado</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+                  <li class="breadcrumb-item active" aria-current="page">Pregrado</li>
                 </ol>
             </div>
             <article>
-                <h2>
-                    Formulario de contacto
-                </h2>
-                <form>
-                    <div class="row g-2 mb-3">
-                        <div class="col-md">
-                            <label for="nombreInputHelp" class="form-label">Nombre</label>
-                            <input type="input" class="form-control" id="nombreInputHelp" aria-describedby="nameHelp">
-                            <div id="nameHelp" class="hiddenHelp">En este campo ingresa tu primer nombre</div>
+                <div>
+                    <h3 tabindex="99">Programas de estudio</h3>
+                    <div class="mt-2 recyclerView">
+                        <div class="itemCarrera">
+                            <img src="https://ikiam.edu.ec/img/carreras/agroecologia.jpg" alt="vegetales">
+                            <div>
+                                <h5 tabindex="100">Ingeniería en Geociencias</h5>
+                                <p tabindex="100">Ingeniería en Geociencias en Ikiam te prepara para garantizar el abastecimiento y aprovechamiento sostenible de los recursos naturales, así como a identificar y cuantificar los riesgos geológicos y climáticos, a manera de prevenir y mitigar su impacto sobre las sociedades.</p>
+                            </div>
                         </div>
-                        <div class="col-md">
-                            <label for="apellidoInputHelp" class="form-label">Apellido</label>
-                            <input type="input" class="form-control" id="apellidoInputHelp" aria-describedby="lnameHelp">
-                            <div id="lnameHelp" class="hiddenHelp">En este campo ingresa tu primer apellido</div>
+                        <div class="itemCarrera">
+                            <img src="https://ikiam.edu.ec/img/carreras/agua.jpg" alt="Dos personas tomando métricas del agua del río">
+                            <div>
+                                <h5 tabindex="100">Ingeniería en Hidrología</h5>
+                                <p tabindex="100">La carrera Ingeniería en Hidrología te permite diseñar, desarrollar y mantener acciones para la conservación y aprovechamiento de los recursos hídricos del planeta, pensando siempre en dar soluciones efectivas a la contaminación y al uso sostenible del recurso hídrico y acuático en Ecuador.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      <div id="emailHelp" class="hiddenHelp">En este campo ingresa tu dirección de correo electrónico</div>
+                </div>
+                <aside>
+                    <h3 tabindex="200">Facultades</h3>
+                    <div class="mt-2 recyclerView">
+                        <a href="#" class="itemFacultad" tabindex="201">Ciencias de la Tierra y Agua</a>
+                        <a href="#" class="itemFacultad" tabindex="201">Ciencias de la Vida</a>
+                        <a href="#" class="itemFacultad" tabindex="201">Ciencias Socio Ambientales</a>
+                        <a href="#" class="itemFacultad" tabindex="201">Ciencias Experimentales</a>
                     </div>
-                    <div class="mb-3">
-                        <label for="selectCarrera" class="form-label">Carrera:</label>
-                        <select class="form-select" id="selectCarrera"
-                        aria-label="Menú desplegable de las carreras o programas a los que se puede consultar información">
-                            <option selected disabled>Selecciona tu carrera</option>
-                            <option value="1">Ingeniería en biotecnología</option>
-                            <option value="2">Ingeniería en geociencias</option>
-                            <option value="3">Ingeniería en agroecología</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" aria-describedby="areaHelp" rows="2"></textarea>
-                        <div id="areaHelp" class="hiddenHelp">En este campo escribe la consulta o duda que tengas para que el personal de la universidad la responda</div>
-                      </div>
-                    <button type="submit" class="btn btn-primary">Contactar</button>
-                </form>
+                </aside>
             </article>
+
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

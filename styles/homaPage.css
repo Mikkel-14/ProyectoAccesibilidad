@@ -32,13 +32,13 @@ nav> div > div> a {
     text-decoration: none;
     color: inherit;
     padding: 0 10px;
-    color: #FF6700;
+    color: #004E98;
     font-weight: 500;
 }
 
 nav> div > div> a:hover {
     text-decoration: underline;
-    color: #FF6700;
+    color: #004E98;
 }
 
 .cuadroTexto{
